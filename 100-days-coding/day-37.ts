@@ -1,0 +1,37 @@
+//question num-109
+
+const currentTime =new Date();
+if (currentTime.getHours() < 12) {
+    console.log("Good Morning"); 
+}
+
+//question num-110
+
+function assignGrade(score: number): string {
+    if (score >= 90) {
+        return "A";
+    } else if (score >= 80) {
+        return "B";
+    }else if (score >= 70) {
+        return "C";
+    }else if (score >=  60){
+        return "D";
+    }else {
+        return "F";
+    }
+}
+
+console.log(assignGrade(85));
+console.log(assignGrade(55));
+
+//question num-111
+
+function categorizeAge(age: number): string {
+    if (age < 13) {
+        return "child";
+    } else if (age <= 19) {
+        return "teenager";
+    } else {
+        return "adult";
+    }
+}
